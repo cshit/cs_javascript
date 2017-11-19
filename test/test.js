@@ -1,9 +1,9 @@
-var assert = require('assert');
+let expect = require('./test-helper').expect;
 
 describe('Array', function() {
-  describe('#indexOf()', function() {
-    it('should return -1 when the value is not present', function() {
-      assert.equal(-1, [1,2,3].indexOf(4));
+  describe('#include()', function() {
+    it('expect to be and array that does not include an element.', function() {
+      expect([1, 2]).to.be.an('array').that.does.not.include(3);
     });
   });
 });
