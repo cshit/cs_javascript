@@ -4,7 +4,7 @@
   "description": "CS fundamentals in coffee script",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
