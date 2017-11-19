@@ -1,0 +1,17 @@
+{
+  "name": "coffee_cs",
+  "version": "1.0.0",
+  "description": "fundamental cs in coffeescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "sebabelmar",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "coffeescript": "^2.0.2",
+    "mocha": "^4.0.1",
+    "sinon": "^4.1.2"
+  }
+}
