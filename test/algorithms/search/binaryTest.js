@@ -1,7 +1,7 @@
 expect = require('../../test-helper').expect;
 const {bSearch} = require('../../../src/algorithms/search/binary');
 
-describe('Binary Search', ()=>{
+describe('Binary Search Recursively', ()=>{
   var sortedArray = [1,2,3,4,5,6,7,8,9]
   var endIdx = sortedArray.length - 1
 
