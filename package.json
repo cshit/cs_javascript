@@ -4,7 +4,8 @@
   "description": "CS fundamentals in coffee script",
   "main": "index.js",
   "scripts": {
-    "test": "mocha  --recursive --compilers coffee:coffeescript/register"
+    "test": "mocha  --recursive --compilers coffee:coffeescript/register",
+    "test-d": "mocha debug --recursive --compilers coffee:coffeescript/register"
   },
   "repository": {
     "type": "git",
