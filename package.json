@@ -1,11 +1,11 @@
 {
-  "name": "coffee_cs",
+  "name": "js_cs",
   "version": "1.0.0",
-  "description": "CS fundamentals in coffee script",
+  "description": "CS fundamentals in plain JavaScript",
   "main": "index.js",
   "scripts": {
-    "test": "mocha  --recursive --compilers coffee:coffeescript/register",
-    "test-d": "mocha debug --recursive --compilers coffee:coffeescript/register"
+    "test": "mocha  --recursive",
+    "test-d": "mocha debug --recursive"
   },
   "repository": {
     "type": "git",
@@ -24,7 +24,6 @@
   "homepage": "https://github.com/cshit/cs_coffee#readme",
   "devDependencies": {
     "chai": "^4.1.2",
-    "coffeescript": "^2.0.2",
     "mocha": "^4.0.1",
     "sinon": "^4.1.2"
   }
