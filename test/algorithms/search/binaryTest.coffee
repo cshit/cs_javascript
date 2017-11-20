@@ -15,3 +15,6 @@ describe 'Binary Search', ->
   it 'returns index of target number when located on the extrems', ->
     expect(bSearch(sortedArray, 1, 0, endIdx)).to.equal(0)
     expect(bSearch(sortedArray, 9, 0, endIdx)).to.equal(8)
+
+  it 'returns false if target number not present', ->
+    expect(bSearch(sortedArray, 11, 0, endIdx)).to.be.false

@@ -3,6 +3,8 @@ bSearch = (targetArray, targetNumber, begIdx, endIdx) ->
 
   mid = Math.floor((begIdx + endIdx) / 2)
 
+  return false if endIdx < begIdx
+
   return mid if targetArray[mid] == targetNumber
 
   if targetArray[mid] > targetNumber
