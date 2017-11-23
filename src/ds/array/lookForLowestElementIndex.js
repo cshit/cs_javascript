@@ -1,4 +1,4 @@
-var findLowerIndex = (array, startIndex)=>{
+var findLowestIndex = (array, startIndex)=>{
   let lowerValue = array[startIndex];
   let lowerIndex = startIndex;
 
@@ -12,4 +12,4 @@ var findLowerIndex = (array, startIndex)=>{
   return lowerIndex;
 };
 
-module.exports.findLowerIndex = findLowerIndex;
+module.exports.findLowestIndex = findLowestIndex;
