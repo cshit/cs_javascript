@@ -2,7 +2,6 @@
 ## Find a topic to practice
 
 - __cs_javascript__
-  - [README.md](cs_javascript/README.md)
   - __src__
     - __algorithms__
       - __search__
