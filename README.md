@@ -1,28 +1,28 @@
 
 ## Find a topic to practice
 
-- __js_cs__
-  - [README.md](js_cs/README.md)
+- __cs_javascript__
+  - [README.md](cs_javascript/README.md)
   - __src__
     - __algorithms__
       - __search__
-        - [binary.js](js_cs/src/algorithms/search/binary.js)
-        - [binaryIteratively.js](js_cs/src/algorithms/search/binaryIteratively.js)
+        - [binary.js](cs_javascript/src/algorithms/search/binary.js)
+        - [binaryIteratively.js](cs_javascript/src/algorithms/search/binaryIteratively.js)
       - __sorting__
-        - [selection.js](js_cs/src/algorithms/sorting/selection.js)
+        - [selection.js](cs_javascript/src/algorithms/sorting/selection.js)
     - __ds__
       - __array__
-        - [lookForLowestElementIndex.js](js_cs/src/ds/array/lookForLowestElementIndex.js)
-        - [swap.js](js_cs/src/ds/array/swap.js)
+        - [lookForLowestElementIndex.js](cs_javascript/src/ds/array/lookForLowestElementIndex.js)
+        - [swap.js](cs_javascript/src/ds/array/swap.js)
   - __test__
     - __algorithms__
       - __search__
-        - [binaryIterativelyTest.js](js_cs/test/algorithms/search/binaryIterativelyTest.js)
-        - [binaryTest.js](js_cs/test/algorithms/search/binaryTest.js)
+        - [binaryIterativelyTest.js](cs_javascript/test/algorithms/search/binaryIterativelyTest.js)
+        - [binaryTest.js](cs_javascript/test/algorithms/search/binaryTest.js)
       - __sorting__
-        - [selectionTest.js](js_cs/test/algorithms/sorting/selectionTest.js)
+        - [selectionTest.js](cs_javascript/test/algorithms/sorting/selectionTest.js)
     - __ds__
       - __array__
-        - [lookForLowestElementIndexTest.js](js_cs/test/ds/array/lookForLowestElementIndexTest.js)
-        - [swapingTest.js](js_cs/test/ds/array/swapingTest.js)
-    - [test-helper.js](js_cs/test/test-helper.js)
+        - [lookForLowestElementIndexTest.js](cs_javascript/test/ds/array/lookForLowestElementIndexTest.js)
+        - [swapingTest.js](cs_javascript/test/ds/array/swapingTest.js)
+    - [test-helper.js](cs_javascript/test/test-helper.js)
