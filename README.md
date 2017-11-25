@@ -1,28 +1,36 @@
 
 ## Find a topic to practice
 
-- __cs_javascript__
+- ___
   - __src__
     - __algorithms__
+      - __recursion__
+        - [factorial.js](src/algorithms/recursion/factorial.js)
+        - [palindrome.js](src/algorithms/recursion/palindrome.js)
       - __search__
         - [binary.js](src/algorithms/search/binary.js)
-
         - [binaryIteratively.js](src/algorithms/search/binaryIteratively.js)
       - __sorting__
+        - [insertion.js](src/algorithms/sorting/insertion.js)
         - [selection.js](src/algorithms/sorting/selection.js)
     - __ds__
       - __array__
+        - [insertNextSortedElement.js](src/ds/array/insertNextSortedElement.js)
         - [lookForLowestElementIndex.js](src/ds/array/lookForLowestElementIndex.js)
         - [swap.js](src/ds/array/swap.js)
   - __test__
     - __algorithms__
+      - __recursion__
+        - [factorialTest.js](test/algorithms/recursion/factorialTest.js)
+        - [palindromeTest.js](test/algorithms/recursion/palindromeTest.js)
       - __search__
         - [binaryIterativelyTest.js](test/algorithms/search/binaryIterativelyTest.js)
         - [binaryTest.js](test/algorithms/search/binaryTest.js)
       - __sorting__
+        - [insertionTest.js](test/algorithms/sorting/insertionTest.js)
         - [selectionTest.js](test/algorithms/sorting/selectionTest.js)
     - __ds__
       - __array__
+        - [insertNextSortedElementTest.js](test/ds/array/insertNextSortedElementTest.js)
         - [lookForLowestElementIndexTest.js](test/ds/array/lookForLowestElementIndexTest.js)
         - [swapingTest.js](test/ds/array/swapingTest.js)
-    - [test-helper.js](test/test-helper.js)
