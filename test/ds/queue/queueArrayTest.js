@@ -10,17 +10,17 @@ describe('Queue using array', function(){
     toInsert = ['Mercury', 'Saturn', 'Pluto'];
   });
 
-  it('Its empty on initialize', function(){
+  it('its empty on initialize', function(){
     expect(queueArray.count()).to.equal(0);
   });
 
-  it('Enqueue 3 elements', function(){
+  it('enqueue 3 elements', function(){
     toInsert.forEach(planet =>  queueArray.enqueue(planet));
 
     expect(queueArray.count()).to.equal(3);
   });
 
-  it('Dequeue 2 elements', function(){
+  it('dequeue 2 elements FIFO', function(){
     queueArray.reset();
     toInsert.forEach(planet =>  queueArray.enqueue(planet));
 

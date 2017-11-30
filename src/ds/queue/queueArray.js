@@ -1,22 +1,18 @@
 class QueueArray {
   constructor(){
     this.queue = [];
-    this.currentCount = 0;
   }
 
   count(){
-    return this.currentCount;
+    return this.queue.length;
   }
 
   enqueue(value){
     this.queue.push(value);
-    this.currentCount ++;
   }
 
   dequeue(){
-    if(this.currentCount > 0){
-      this.currentCount --;
-
+    if(this.count()){
       return this.queue.shift();
     }
     return null;
@@ -25,7 +21,6 @@ class QueueArray {
 
   reset(){
     this.queue = [];
-    this.currentCount = 0;
   }
 }
 
