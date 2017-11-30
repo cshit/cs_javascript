@@ -23,6 +23,10 @@
         - [merge.js](src/ds/array/merge.js)
         - [partition.js](src/ds/array/partition.js)
         - [swap.js](src/ds/array/swap.js)
+      - __queue__
+        - [queueArray.js](src/ds/queue/queueArray.js)
+      - __stack__
+        - [stackArray.js](src/ds/stack/stackArray.js)
   - __test__
     - __algorithms__
       - __recursion__
@@ -44,4 +48,8 @@
         - [mergeTest.js](test/ds/array/mergeTest.js)
         - [partitionTest.js](test/ds/array/partitionTest.js)
         - [swapingTest.js](test/ds/array/swapingTest.js)
+      - __queue__
+        - [queueArrayTest.js](test/ds/queue/queueArrayTest.js)
+      - __stack__
+        - [stackArrayTest.js](test/ds/stack/stackArrayTest.js)
     - [test-helper.js](test/test-helper.js)
