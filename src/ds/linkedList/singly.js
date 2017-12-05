@@ -30,26 +30,45 @@ class SinglyLinkedList{
   }
 
   delete(value){
-    const sucessor = this._findSucessor(value);
-    const current = sucessor.next;
-    sucessor.next = current.next;
+    const previous = this._findPredecessor(value);
+    const current = previous.next;
+    previous.next = current.next;
   }
 
   // Recursive
-  traverse(){
-    console.log(this.value);
+  traverse(nodesValues=[]){
+    nodesValues.push(this.value);
     if(this.next === null){
-      return;
+      return nodesValues;
     }
-    this.next.traverse();
+    return this.next.traverse(nodesValues);
+  }
+
+  // Iterativily
+  reverse(){
+    // reverse a linked list
+    let current = this;
+    let previous = null;
+
+    while(current) {
+      // save next or you lose it!!!
+      let temp = current.next;
+      // reverse pointer
+      current.next = previous;
+      // increment previous to current node
+      previous = current;
+      // increment node to next node or null at end of list
+      current = temp;
+    }
+    return previous;   // Change the list head !!!
   }
 
   // Recursive
-  _findSucessor(value, sucessor){
+  _findPredecessor(value, previous=this){
     if(this.value === value){
-      return sucessor;
+      return previous;
     }else if (this.next !== null) {
-      return this.next._findSucessor(value, this);
+      return this.next._findPredecessor(value, this);
     }
 
     return null;

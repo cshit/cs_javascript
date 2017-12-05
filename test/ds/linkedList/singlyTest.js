@@ -2,25 +2,25 @@ const {expect} = require('../../test-helper');
 const {SinglyLinkedList} = require('../../../src/ds/linkedList/singly');
 
 
-describe('Singly Linked List', function(){
+describe('Singly Linked List', () => {
   let head;
 
-  beforeEach(function(){
+  beforeEach(() => {
     head = new SinglyLinkedList('value');
   });
 
-  context('Creates', function(){
-    it('creates a list with head, next = nil', function(){
+  context('Creates', () => {
+    it('creates a list with head, next = nil', () => {
       expect(head.next).to.equal(null);
     });
 
-    it('creates a list with head, value = value', function(){
+    it('creates a list with head, value = value', () => {
       expect(head.value).to.equal('value');
     });
   });
 
-  context('Add', function(){
-    it('adds a node to the head with some value', function(){
+  context('Add', () => {
+    it('adds a node to the head with some value', () => {
       const value2 = 'value2';
       head.add(value2);
 
@@ -28,22 +28,22 @@ describe('Singly Linked List', function(){
     });
   });
 
-  context('Find', function(){
-    it('finds a node with a specific value place at the end', function(){
+  context('Find', () => {
+    it('finds a node with a specific value place at the end', () => {
       head.add('value2').add('value3').add('value4');
       const target = 'value4';
 
       expect(head.find(target)).to.be.an.instanceof(SinglyLinkedList);
     });
 
-    it('finds a node with a specific value place in the middle', function(){
+    it('finds a node with a specific value place in the middle', () => {
       head.add('value2').add('value3').add('value4');
       const target = 'value3';
 
       expect(head.find(target)).to.be.an.instanceof(SinglyLinkedList);
     });
 
-    it('returns null when a value not found', function(){
+    it('returns null when a value not found', () => {
       head.add('value2').add('value3').add('value4');
       const target = 'nothere';
 
@@ -51,23 +51,45 @@ describe('Singly Linked List', function(){
     });
   });
 
-  context('Delete', function(){
+  context('Traverse', () => {
+    it('deletes a node placed in as the middle', () => {
+      const values = ['value','value2','value3','value4'];
 
-    it('deletes a node placed in as the middle', function(){
       head.add('value2').add('value3').add('value4');
-      head.delete('value3');
-      head.traverse();
+      const listValues = head.traverse();
 
-      expect(head.find('value3')).to.be.a('null');
-    });
-
-    it('deletes a node placed in at the end', function(){
-      head.add('value2').add('value3').add('value4');
-      head.delete('value4');
-      head.traverse();
-
-      expect(head.find('value4')).to.be.a('null');
+      expect(listValues.equals(values)).to.equal(true);
     });
   });
 
+  context('Delete', () => {
+    it('deletes a node placed in as the middle', () => {
+      head.add('value2').add('value3').add('value4');
+      head.delete('value3');
+      const listValues = head.traverse();
+
+      expect(head.find('value3')).to.be.a('null');
+      expect(listValues.equals(['value','value2','value4'])).to.be.equal(true);
+    });
+
+    it('deletes a node placed in at the end', () => {
+      head.add('value2').add('value3').add('value4');
+      head.delete('value4');
+      const listValues = head.traverse();
+
+      expect(head.find('value4')).to.be.a('null');
+      expect(listValues.equals(['value','value2','value3'])).to.be.equal(true);
+    });
+  });
+
+  context('Reverse', () => {
+    it('reverses the list', () => {
+      head.add('value2').add('value3').add('value4');
+      const reversedValues = ['value','value2','value3','value4'].reverse();
+      head = head.reverse();
+      const reverserdValuesList = head.traverse();
+
+      expect(reverserdValuesList.equals(reversedValues)).to.equal(true);
+    });
+  });
 });
