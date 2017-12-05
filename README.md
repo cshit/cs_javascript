@@ -1,3 +1,25 @@
+# Get you CS done!
+
+Implement your own CS Suite by passing the tests.
+
+# Where to start?
+
+I recommend to start with getting all the 5 main array moves that you need to master:
+* [swap](src/ds/array/swap.js)
+* [lookForLowestElementIndex](src/ds/array/lookForLowestElementIndex.js)
+* [insertNextSortedElement](src/ds/array/insertNextSortedElement.js)
+* [merge](src/ds/array/merge.js)
+* [partition](src/ds/array/partition.js)
+
+Then you can move to algorithms or implementing data structures.
+Once your suite is ready you can use it to practice coding exercises.
+
+# Install and run  
+
+`npm install`
+
+`npm test`
+
 
 ## Find a topic to practice
 
@@ -57,3 +79,10 @@
       - __stack__
         - [stackArrayTest.js](test/ds/stack/stackArrayTest.js)
     - [test-helper.js](test/test-helper.js)
+
+## TODO:
+* Balanced Search Tree
+* Graph
+  * Breadth First Traversal
+  * Depth First Traversal
+* Any other contribution
