@@ -1,9 +1,4 @@
-var swap = (array, firstIndex, secondIndex)=>{
-  let temp = array[firstIndex];
-  array[firstIndex] = array[secondIndex];
-  array[secondIndex] = temp;
+// Code here
 
-  return array;
-};
 
 module.exports.swap = swap;
