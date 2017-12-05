@@ -19,7 +19,6 @@ describe('Singly Linked List', function(){
     });
   });
 
-
   context('Add', function(){
     it('adds a node to the head with some value', function(){
       const value2 = 'value2';
@@ -28,7 +27,6 @@ describe('Singly Linked List', function(){
       expect(head.next.value).to.equal(value2);
     });
   });
-
 
   context('Find', function(){
     it('finds a node with a specific value place at the end', function(){

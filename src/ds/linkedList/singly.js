@@ -30,12 +30,7 @@ class SinglyLinkedList{
   }
 
   delete(value){
-    // find sucessor
-    // sucessor next = current.context
-    // deallocate memory
-
     const sucessor = this._findSucessor(value);
-    // console.log(sucessor.next);
     const current = sucessor.next;
     sucessor.next = current.next;
   }
