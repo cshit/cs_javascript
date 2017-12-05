@@ -16,6 +16,8 @@ Once your suite is ready you can use it to practice coding exercises.
 
 # Install and run  
 
+Clone repot and checkout `test-driven` branch
+
 `npm install`
 
 `npm test`
@@ -86,3 +88,8 @@ Once your suite is ready you can use it to practice coding exercises.
   * Breadth First Traversal
   * Depth First Traversal
 * Any other contribution
+
+## Specs
+* node
+* mocha
+* chi
