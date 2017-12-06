@@ -1,4 +1,4 @@
-# Get you CS done!
+# Get your CS done!
 
 Implement your own CS Suite by passing the tests.
 
