@@ -10,9 +10,9 @@
 const {expect} = require('../../test-helper');
 const {calucalteProductOfAllOtherIntegersTest} = require('../../../src/ds/array/calucalteProductOfAllOtherIntegersTest');
 
-describe('Calculates Product of All Other Integers', function(){
+describe('Calculates Product of All Other Integers', () => {
 
-    it('caluculates products when given array of integers', function(){
+    it('caluculates products when given array of integers', () => {
       const input  = [2, 3, 5, 1, 9];
       const output = [135, 90, 54, 270, 30];
       const products = calucalteProductOfAllOtherIntegersTest(input);
@@ -20,7 +20,7 @@ describe('Calculates Product of All Other Integers', function(){
       expect(products.equals(output)).to.eq(true);
     });
 
-    it('caluculates products when last integer === 0', function(){
+    it('caluculates products when last integer === 0', () => {
       const input  = [2, 3, 5, 1, 0];
       const output = [0, 0, 0, 0, 30];
       const products = calucalteProductOfAllOtherIntegersTest(input);
@@ -28,7 +28,7 @@ describe('Calculates Product of All Other Integers', function(){
       expect(products.equals(output)).to.eq(true);
     });
 
-    it('caluculates products when first integer === 0', function(){
+    it('caluculates products when first integer === 0', () => {
       const input  = [0, 3, 5, 1, 9];
       const output = [135, 0, 0, 0, 0];
       const products = calucalteProductOfAllOtherIntegersTest(input);
@@ -36,7 +36,7 @@ describe('Calculates Product of All Other Integers', function(){
       expect(products.equals(output)).to.eq(true);
     });
 
-    it('caluculates products when integer === 0 placed in the middle', function(){
+    it('caluculates products when integer === 0 placed in the middle', () => {
       const input  = [2, 3, 0, 1, 9];
       const output = [0, 0, 54, 0, 0];
       const products = calucalteProductOfAllOtherIntegersTest(input);
@@ -44,7 +44,7 @@ describe('Calculates Product of All Other Integers', function(){
       expect(products.equals(output)).to.eq(true);
     });
 
-    it('caluculates products when  2 integer === 0', function(){
+    it('caluculates products when  2 integer === 0', () => {
       const input  = [2, 3, 0, 1, 0];
       const output = [0, 0, 0, 0, 0];
       const products = calucalteProductOfAllOtherIntegersTest(input);
