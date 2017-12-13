@@ -1,6 +1,6 @@
 /*
-* Assuming that consucutive numbers and only being able to calculate the difference of n - (n-i)
-* meaning youc an not calculate the difference between a number located at an index with an other
+* Assuming consucutive numbers and only being able to calculate the difference of n - (n-i)
+* meaning you can not calculate the difference between a number located at an index with an other
 * located at a highe index.
 */
 
