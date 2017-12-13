@@ -8,25 +8,17 @@ const calucalteProductOfAllOtherIntegersTest = (targetArray) => {
   let previousProducts = 1;
 
   for (let i = 0; i < targetArray.length; i++) {
-    if(i === 0) {
       products[i] = previousProducts;
-    } else {
-      products[i] = targetArray[i-1] * previousProducts;
-      previousProducts = products[i];
-    }
+      previousProducts = products[i] * targetArray[i];
   }
 
   previousProducts = 1;
 
   for (let j = targetArray.length - 1; j >= 0; j--) {
-    if(j === targetArray.length - 1){
       products[j] *= previousProducts;
-    }else{
-      products[j] *= targetArray[j+1] * previousProducts;
-      previousProducts = targetArray[j+1] * previousProducts;
-    }
+      previousProducts = targetArray[j] * previousProducts;
   }
-  
+
   return products;
 };
 
