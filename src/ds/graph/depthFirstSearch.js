@@ -47,7 +47,6 @@ node5 = new Node('E');
 node6 = new Node('F');
 node7 = new Node('G');
 
-
 node1.adjacencyList.push(node2);
 node1.adjacencyList.push(node3);
 node1.adjacencyList.push(node4);
